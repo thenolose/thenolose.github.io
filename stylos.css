@@ -1,0 +1,162 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0073e6, #00b4d8); /* Fondo azul degradado */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 50px 20px; /* Espaciado interno */
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Tamaño del título */
+    margin-bottom: 10px; /* Separación del texto */
+}
+
+.hero p {
+    font-size: 1.2em; /* Tamaño del texto */
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #ffcc00; /* Fondo del botón */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1em; /* Tamaño del texto del botón */
+}
+
+.hero .btn:hover {
+    background: #ffc107; /* Color al pasar el mouse */
+}
+
+/* Navegación */
+nav {
+    background: #333; /* Fondo oscuro */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Centrar elementos */
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap; /* Permitir que los elementos se muevan a la siguiente línea en pantallas pequeñas */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    text-decoration: none; /* Sin subrayado */
+}
+
+nav ul li a:hover {
+    background: #0073e6; /* Fondo al pasar el mouse */
+}
+
+/* Contenido Principal */
+.arc {
+    background: #fff; /* Fondo blanco */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.arc h2 {
+    font-size: 1.8em; /* Tamaño del título */
+    color: #0073e6; /* Azul para el título */
+}
+
+.arc p {
+    margin: 10px 0;
+}
+
+.arc .image-placeholder {
+    background: #ddd; /* Fondo gris */
+    height: 200px; /* Altura de la imagen */
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    font-style: italic;
+    border: 2px dashed #bbb; /* Borde punteado */
+    margin: 10px 0;
+}
+
+.arc .btn {
+    background: #0073e6; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.arc .btn:hover {
+    background: #005bb5; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Pie de Página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em; /* Reducir tamaño del título */
+    }
+
+    .hero p {
+        font-size: 1em; /* Reducir tamaño del texto */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar a columna */
+    }
+
+    .arc h2 {
+        font-size: 1.5em; /* Reducir tamaño del título */
+    }
+
+    .arc {
+        padding: 15px; /* Reducir espaciado */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em; /* Reducir aún más para móviles */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Reducir espaciado */
+    }
+
+    .arc .btn {
+        padding: 8px 15px; /* Botón más compacto */
+        font-size: 0.9em
+}
